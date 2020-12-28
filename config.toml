@@ -1,55 +1,39 @@
 baseURL = "https://pwnedtech.org/"
 languageCode = "en-us"
-paginate = 6
+paginate = 5
 theme = "portio"
-title = "Portio"
+title = "Pwned Tech"
 # Main Menu
 [[menu.main]]
-name = "Home"
+name = "Inicio"
 url = "#home"
 weight = 1
 [[menu.main]]
-name = "About"
+name = "Información"
 url = "#about"
 weight = 2
 [[menu.main]]
-name = "Service"
-url = "#service"
-weight = 3
-[[menu.main]]
-name = "Work"
-url = "#portfolio"
-weight = 4
-[[menu.main]]
-name = "Resume"
-url = "#resume"
-weight = 5
-[[menu.main]]
-name = "Blog"
-url = "#blog"
-weight = 6
-[[menu.main]]
-name = "Contact"
+name = "Contacto"
 url = "#contact"
-weight = 7
+weight = 3
 
 # Sitemap Menu
 [[menu.sitemap]]
-name = "About me"
+name = "Información"
 url = "about"
 weight = 1
-[[menu.sitemap]]
-name = "Frequently Ask Question"
-url = "#"
-weight = 2
-[[menu.sitemap]]
-name = "Privacy & Policy"
-url = "#"
-weight = 3
+#[[menu.sitemap]]
+#name = "Frequently Ask Question"
+#url = "#"
+#weight = 2
+#[[menu.sitemap]]
+#name = "Privacy & Policy"
+#url = "#"
+#weight = 3
 [[menu.sitemap]]
 name = "Latest Article"
 url = "#"
-weight = 4
+weight = 2
 
 [params]
 blogPageURL = "blog"
@@ -60,32 +44,24 @@ formspreeURL = "YOUR FORMSPREE URL"
 googleAnalytics = "YOUR GOOGLE ANALYTICS CODE"
 logo = "images/site-navigation/logo.png"
 
-[params.address]
-address = "23 Khan Niketon, Grand Street, NYK."
-email = "hello@example.com"
-openingHours = "Open from 10am to 6pm (close at 5pm Sundays)"
-phone = "+(448) 833 5272 332"
+#[params.address]
+#address = "23 Khan Niketon, Grand Street, NYK."
+#email = "hello@example.com"
+#openingHours = "Open from 10am to 6pm (close at 5pm Sundays)"
+#phone = "+(448) 833 5272 332"
 
-[params.map]
-APIkey = "YOUR GOOGLE MAP API"
-latitude = "23.7783741"
-longitude = "90.3746808"
-pinImage = "images/pin.png"
+#[params.map]
+#APIkey = "YOUR GOOGLE MAP API"
+#latitude = "23.7783741"
+#longitude = "90.3746808"
+#pinImage = "images/pin.png"
 
 # Social icons
 [[params.social]]
-icon = "fa-facebook-official"
-url = "https://www.facebook.com/"
-weight = 1
-[[params.social]]
-icon = "fa-linkedin-square"
-url = "https://www.linkedin.com/"
-weight = 2
-[[params.social]]
-icon = "fa-pinterest-square"
-url = "https://www.pinterest.com/"
-weight = 3
-[[params.social]]
 icon = "fa-twitter-square"
 url = "https://twitter.com/"
-weight = 4
+weight = 1
+[[params.social]]
+icon = "fa-instagram"
+url = "https://twitter.com/"
+weight = 2
