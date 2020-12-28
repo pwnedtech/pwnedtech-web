@@ -60,8 +60,8 @@ logo = "images/site-navigation/logo.png"
 [[params.social]]
 icon = "fa-twitter-square"
 url = "https://twitter.com/pwnedtech"
-weight = 2
+weight = 1
 [[params.social]]
 icon = "fa-instagram"
 url = "https://www.instagram.com/pwnedtech"
-weight = 2
+weight = 1
