@@ -1,6 +1,6 @@
-# Hackmeeting Yacuiba 2020
+# PWNED TECH
 
-Sitio Web para el Hackmeeting 2020, escrito en markdown y procesado con [Hugo Framework](https://gohugo.io/).
+Sitio Web Pwned Tech, escrito en markdown y procesado con [Hugo Framework](https://gohugo.io/).
 
 ## Estructura de Repositorio
 
