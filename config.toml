@@ -2,7 +2,7 @@ baseURL = "https://pwnedtech.org/"
 languageCode = "en-us"
 paginate = 5
 theme = "portio"
-title = "Pwned Tech"
+title = "PwnedTech"
 # Main Menu
 [[menu.main]]
 name = "Inicio"
@@ -59,9 +59,9 @@ logo = "images/site-navigation/logo.png"
 # Social icons
 [[params.social]]
 icon = "fa-twitter-square"
-url = "https://twitter.com/"
-weight = 1
+url = "https://twitter.com/pwnedtech"
+weight = 2
 [[params.social]]
 icon = "fa-instagram"
-url = "https://twitter.com/"
+url = "https://www.instagram.com/pwnedtech"
 weight = 2
