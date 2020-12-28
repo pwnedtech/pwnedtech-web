@@ -1,4 +1,4 @@
-baseURL = "http://pwnedtech.org/"
+baseURL = "https://pwnedtech.org/"
 languageCode = "en-us"
 paginate = 6
 theme = "portio"
