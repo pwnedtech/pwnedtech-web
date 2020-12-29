@@ -1,944 +1,1441 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
 <head>
+	<meta charset="utf-8">
+	<title>Pwned Tech</title>
+
+	<!-- mobile responsive meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="description" content="Cybersecurity for world">
+	
+	<meta name="author" content="PwnedTech">
 	<meta name="generator" content="Hugo 0.68.3" />
-  <meta charset="utf-8" />
-  <title>Pwned Tech</title>
 
-  <!-- mobile responsive meta -->
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<!-- plugins -->
+	
+	<link rel="stylesheet" href="https://pwnedtech.org/plugins/bootstrap/bootstrap.min.css">
+	
+	<link rel="stylesheet" href="https://pwnedtech.org/plugins/themify-icons/themify-icons.css">
+	
+	<link rel="stylesheet" href="https://pwnedtech.org/plugins/magnific-popup/magnific-popup.css">
+	
+	<link rel="stylesheet" href="https://pwnedtech.org/plugins/slick/slick.css">
+	
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anaheim%7cQuattrocento&#43;Sans:400,700&amp;display=swap">
+	
 
-  <!-- Slick Carousel -->
-  <link rel="stylesheet" href="https://pwnedtech.org/plugins/slick/slick.css" />
-  <link rel="stylesheet" href="https://pwnedtech.org/plugins/slick/slick-theme.css" />
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://pwnedtech.org/plugins/font-awesome/css/font-awesome.min.css" />
+	<!-- Main Stylesheet -->
+	
+	<link rel="stylesheet" href="https://pwnedtech.org/css/style.min.css" media="screen">
 
-  <!-- Magnific Popup -->
-  <link rel="stylesheet" href="https://pwnedtech.org/plugins/magnafic-popup/magnific-popup.css" />
+	<!-- Custom stylesheet - for your changes -->
+	
+  <link rel="stylesheet" href="https://pwnedtech.org/css/custom.min.css" media="screen">
 
-  <!-- Stylesheets -->
-  
-  <link href="https://pwnedtech.org/scss/style.min.css" rel="stylesheet" />
+	<!--Favicon-->
+	<link rel="shortcut icon" href="https://pwnedtech.org/images/favicon.png" type="image/x-icon">
+	<link rel="icon" href="https://pwnedtech.org/images/favicon.png" type="image/x-icon">
 
-  <!--Favicon-->
-  <link rel="shortcut icon" href="https://pwnedtech.org/images/favicon.ico" type="image/x-icon" />
-  <link rel="icon" href="https://pwnedtech.org/images/favicon.png" type="image/x-icon" />
-  
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR%20GOOGLE%20ANALYTICS%20CODE"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+	
 
-    gtag('config', 'YOUR GOOGLE ANALYTICS CODE');
-  </script>
-  
 </head>
 
-<body>
-  <nav class="navbar navbar-expand-lg fixed-top">
-  <div class="container">
-    <a href="https://pwnedtech.org/" class="navbar-brand">
-      <img src="https://pwnedtech.org/images/site-navigation/logo.png" alt="site-logo">
-    </a>
-    <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbarCollapse">
-      <span class="navbar-toggler-icon"></span>
-      <span class="navbar-toggler-icon"></span>
-      <span class="navbar-toggler-icon"></span>
-    </button>
 
-    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-      <ul class="nav navbar-nav main-navigation my-0 mx-auto">
-        
-        
-        <li class="nav-item">
-          <a href="https://pwnedtech.org/#home"
-            class="nav-link text-dark text-sm-center p-2 scroll">Inicio</a>
-        </li>
-        
-        <li class="nav-item">
-          <a href="https://pwnedtech.org/#about"
-            class="nav-link text-dark text-sm-center p-2 scroll">Información</a>
-        </li>
-        
-        <li class="nav-item">
-          <a href="https://pwnedtech.org/#contact"
-            class="nav-link text-dark text-sm-center p-2 scroll">Contacto</a>
-        </li>
-        
-      </ul>
-      <div class="navbar-nav">
-        <a href="https://pwnedtech.org/contact" class="btn btn-primary btn-zoom hire_button">Hire Me Now</a>
-      </div>
-    </div>
-  </div>
-</nav>
+<body id="body" data-spy="scroll" data-target=".navbar" data-offset="55">
   <div id="content">
     
 
 
 
-<section class="hero" id="home">
-  <div class="hero_background-svg">
-    <svg viewBox="0 0 1437 1180">
-      <path fill="#f1f6f9" d="M0 0h1377l60 1010a120 120 0 01-120 120L0 1180z" data-name="Path 1350" />
-    </svg>
-  </div>
-  <div class="hero_footer-svg">
-    <img src="images/hero/figure-svg.svg" alt="" />
-  </div>
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-lg-6">
-        <div class="hero_content">
-          <div class="hero_blob">
-            <svg viewBox="0 0 550 550">
-              <defs>
-                <linearGradient id="a" x1=".069" x2=".753" y1=".116" y2=".858" gradientUnits="objectBoundingBox">
-                  <stop offset="0" stop-color="#fff" />
-                  <stop offset="1" stop-color="#fff" stop-opacity=".012" />
-                </linearGradient>
-              </defs>
-              <g data-name="blob-shape (3)">
-                <path class="blob" fill="url(#a)"
-                  d="M455.4 151.1c43.1 36.7 73.4 92.8 60.8 136.3-12.7 43.5-68.1 74.4-111.3 119.4-43.1 45-74 104.1-109.8 109-35.9 5-76.7-44.2-111.8-89.2-35.2-45-64.7-85.8-70.8-132.6-6-46.8 11.6-99.6 46.7-136.3 35.2-36.6 88-57.2 142.4-58.8 54.5-1.7 110.6 15.6 153.8 52.2z" />
-              </g>
-            </svg>
-          </div>
-          <div class="mb-5">
-            <span class="top-title pre-line">Hello, I am Natasha</span>
-            <h1 id="i-am-here-for-your-personal-business">I am here for your personal business</h1>
-<p>Enjoy team diversity and increase their networks among others people in various fields by
-          </div>
-          <a type="button" class="btn btn-lg btn-primary btn-zoom"
-            href="https://pwnedtech.org/contact">Contact me</a>
-        </div>
-      </div>
-      <div class="col-lg-6">
-        <div class="hero_figure">
-          <div class="figure-svg">
-            <img src="images/hero/figure-svg.svg" alt="figure-svg" />
-          </div>
-          <img src="https://pwnedtech.org/images/hero/2960351.jpg" alt="hero-image" style='
-                  -webkit-mask: url(https://pwnedtech.org/images/hero/hero-mask-svg.png);
-                  -webkit-mask-repeat: no-repeat;
-                  -webkit-mask-size: contain;
-                  -webkit-mask-position: center center;
-                ' />
-
-          
-          <div class="hero_figure-popup">
-            <div class="thumb">
-              <img src="images/hero/popup-thumb.png" alt="popup" />
-            </div>
-
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" type="button" class="popup-button text-center big">
-              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="24" viewBox="0 0 21 24">
-                <path d="M17.961 10.264a2 2 0 010 3.473L2.992 22.29A2 2 0 010 20.554V3.446A2 2 0 012.992 1.71z"
-                  data-name="Polygon 4" />
-              </svg>
-            </a>
-          </div>
-          
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
 
 
+<!-- Welcome Slider-->
+<section class="hero-area" style='background-image: url("https://pwnedtech.org/images/backgrounds/hero-area.webp")'>
+	
+	<img class="d-none" src="https://pwnedtech.org/images/backgrounds/hero-area.webp" onerror="this.onerror=null;this.parentElement.style.backgroundImage= 'url(https:\/\/pwnedtech.org\/images\/backgrounds\/hero-area.jpg)'"/>
 
-
-<section class="section about" id="about">
-    <div class="container">
-        <div class="row text-center">
-            <div class="col-lg-6 offset-lg-3">
-                <div class="about_header mb-5">
-                    <span class="top-title">About</span>
-                    <h2 id="about-me">About me</h2>
-<p>Enjoy team diversity and increase their networks among others people in various fields by provided.
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="about_content">
-                    <div class="about_content-thumb">
-                        <div class="about-svg">
-                            <img src="images/hero/figure-svg.svg" alt="figure-svg">
-                        </div>
-                        <div class="about_content-thumb-image">
-                            <img src="https://pwnedtech.org/images/about/about-img.jpg" alt="about-img"
-                                style='-webkit-mask: url(https://pwnedtech.org/images/about/about-mask-svg.svg); -webkit-mask-size: contain;'>
-                        </div>
-                    </div>
-                    <div class="about_content-inner">
-                        <div class="about_content-inner-blob">
-                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                viewBox="0 0 600 600">
-                                <defs>
-                                    <linearGradient id="c" x1="0.929" y1="0.111" x2="0.263" y2="0.935"
-                                        gradientUnits="objectBoundingBox">
-                                        <stop offset="0" stop-color="#f1f6f9" />
-                                        <stop offset="1" stop-color="#f1f6f9" stop-opacity="0" />
-                                    </linearGradient>
-                                </defs>
-                                <g data-name="blob-shape (3)">
-                                    <path class="blob" fill="url(#c)"
-                                        d="M455.4 151.1c43.1 36.7 73.4 92.8 60.8 136.3-12.7 43.5-68.1 74.4-111.3 119.4-43.1 45-74 104.1-109.8 109-35.9 5-76.7-44.2-111.8-89.2-35.2-45-64.7-85.8-70.8-132.6-6-46.8 11.6-99.6 46.7-136.3 35.2-36.6 88-57.2 142.4-58.8 54.5-1.7 110.6 15.6 153.8 52.2z" />
-                                </g>
-                            </svg>
-                        </div>
-                        <div class="mb-4 text-light">
-                            <h3 id="i-design-and-build-ultimate-things">I design and build ultimate things.</h3>
-<p>I love to work in User Experience &amp; User Interface designing. Because I love to solve the design problem and find easy and better solutions to solve it. I always try my best to make good user interface with the best user experience. I have been working as a Visual designer from.
-                        </div>
-                        <div>
-                            <a class="btn btn-primary mr-3 btn-zoom"
-                                href="https://pwnedtech.org/contact">Hire me</a>
-                            <a class="btn btn-outline-primary btn-zoom" href="https://pwnedtech.org/contact">
-                                Download CV </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-
-
-
-<section class="section service" id="service">
-    <div class="service__background">
-        <svg viewBox="0 0 1283 1126">
-            <path fill="#f1f6f9" d="M100 0h1183v1126l-1183-80A100 100 0 010 946V100A100 100 0 01100 0z"
-                data-name="Path 1369" />
-        </svg>
-    </div>
-    <div class="service__background_shape">
-        <svg viewBox="0 0 550 550">
-            <defs>
-                <linearGradient id="b" x1="0.209" y1="0.085" x2="1.071" y2="1.164" gradientUnits="objectBoundingBox">
-                    <stop offset="0" stop-color="#f1f6f9" />
-                    <stop offset="1" stop-color="#f1f6f9" stop-opacity="0" />
-                </linearGradient>
-            </defs>
-            <g data-name="blob-shape (3)">
-                <path class="blob" fill="url(#b)"
-                    d="M455.4 151.1c43.1 36.7 73.4 92.8 60.8 136.3-12.7 43.5-68.1 74.4-111.3 119.4-43.1 45-74 104.1-109.8 109-35.9 5-76.7-44.2-111.8-89.2-35.2-45-64.7-85.8-70.8-132.6-6-46.8 11.6-99.6 46.7-136.3 35.2-36.6 88-57.2 142.4-58.8 54.5-1.7 110.6 15.6 153.8 52.2z" />
-            </g>
-        </svg>
-    </div>
-
-    <div class="service__background_pattern">
-        <img src="images/service/background-pattern.svg" alt="background-pattern">
-    </div>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 col-md-12 col-sm-12">
-                <div class="service__header mb-5">
-                    <span class="top-title pre-line">Working Area</span>
-                    <h2 id="creative-services">Creative Services</h2>
-<p>Enjoy team diversity and increase their networks among others people in various fields by provided.
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <div class="service__slider">
-                    
-                    
-                    <div class="service__slider_item">
-                        <div class="service__slider_item-icon">
-                            <div class="icon-background">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="122.457" height="109.702"
-                                    viewBox="0 0 122.457 109.702">
-                                    <path fill="#f1f6f9"
-                                        d="M49.855527 9.984102c-4.337424-.815024-8.766002-1.633779-13.152776-1.113889-8.196034.975107-15.344329 6.696991-19.41555 13.879649s-5.363288 15.655094-5.187042 23.907191c.156996 7.385448 1.479849 14.875357 4.972905 21.38465s9.337384 11.961229 16.458344 13.922244c4.833752 1.331211 10.056683 1.044827 14.74081 2.829827 7.560693 2.881382 12.209757 10.489626 19.01235 14.870016a25.650039 25.650039 0 0024.16316 1.698928c8.342551-3.846451 14.03857-12.107291 16.641338-20.918947s2.471077-18.187687 1.756125-27.346305c-.843101-10.912846-3.01686-22.783019-11.354287-29.869462-6.037066-5.130853-14.208558-6.772976-21.995428-8.235353z"
-                                        data-name="Path 1354" />
-                                </svg>
-                            </div>
-                            <div class="icon">
-                                <img src=" https://pwnedtech.org/images/service/ui-ux.svg " alt="ui-ux">
-                            </div>
-                        </div>
-                        <div class="mt-5">
-                            <h4 id="uiux-design">UI/UX Design</h4>
-<p>Lorem ipsum dolor sit amet conset sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
-                        </div>
-                    </div>
-                    
-                    <div class="service__slider_item">
-                        <div class="service__slider_item-icon">
-                            <div class="icon-background">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="122.457" height="109.702"
-                                    viewBox="0 0 122.457 109.702">
-                                    <path fill="#f1f6f9"
-                                        d="M49.855527 9.984102c-4.337424-.815024-8.766002-1.633779-13.152776-1.113889-8.196034.975107-15.344329 6.696991-19.41555 13.879649s-5.363288 15.655094-5.187042 23.907191c.156996 7.385448 1.479849 14.875357 4.972905 21.38465s9.337384 11.961229 16.458344 13.922244c4.833752 1.331211 10.056683 1.044827 14.74081 2.829827 7.560693 2.881382 12.209757 10.489626 19.01235 14.870016a25.650039 25.650039 0 0024.16316 1.698928c8.342551-3.846451 14.03857-12.107291 16.641338-20.918947s2.471077-18.187687 1.756125-27.346305c-.843101-10.912846-3.01686-22.783019-11.354287-29.869462-6.037066-5.130853-14.208558-6.772976-21.995428-8.235353z"
-                                        data-name="Path 1354" />
-                                </svg>
-                            </div>
-                            <div class="icon">
-                                <img src=" https://pwnedtech.org/images/service/web.svg " alt="ui-ux">
-                            </div>
-                        </div>
-                        <div class="mt-5">
-                            <h4 id="web-development">Web Development</h4>
-<p>Lorem ipsum dolor sit amet conset sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
-                        </div>
-                    </div>
-                    
-                    <div class="service__slider_item">
-                        <div class="service__slider_item-icon">
-                            <div class="icon-background">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="122.457" height="109.702"
-                                    viewBox="0 0 122.457 109.702">
-                                    <path fill="#f1f6f9"
-                                        d="M49.855527 9.984102c-4.337424-.815024-8.766002-1.633779-13.152776-1.113889-8.196034.975107-15.344329 6.696991-19.41555 13.879649s-5.363288 15.655094-5.187042 23.907191c.156996 7.385448 1.479849 14.875357 4.972905 21.38465s9.337384 11.961229 16.458344 13.922244c4.833752 1.331211 10.056683 1.044827 14.74081 2.829827 7.560693 2.881382 12.209757 10.489626 19.01235 14.870016a25.650039 25.650039 0 0024.16316 1.698928c8.342551-3.846451 14.03857-12.107291 16.641338-20.918947s2.471077-18.187687 1.756125-27.346305c-.843101-10.912846-3.01686-22.783019-11.354287-29.869462-6.037066-5.130853-14.208558-6.772976-21.995428-8.235353z"
-                                        data-name="Path 1354" />
-                                </svg>
-                            </div>
-                            <div class="icon">
-                                <img src=" https://pwnedtech.org/images/service/creative.svg " alt="ui-ux">
-                            </div>
-                        </div>
-                        <div class="mt-5">
-                            <h4 id="creative-design">Creative Design</h4>
-<p>Lorem ipsum dolor sit amet conset sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
-                        </div>
-                    </div>
-                    
-                    <div class="service__slider_item">
-                        <div class="service__slider_item-icon">
-                            <div class="icon-background">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="122.457" height="109.702"
-                                    viewBox="0 0 122.457 109.702">
-                                    <path fill="#f1f6f9"
-                                        d="M49.855527 9.984102c-4.337424-.815024-8.766002-1.633779-13.152776-1.113889-8.196034.975107-15.344329 6.696991-19.41555 13.879649s-5.363288 15.655094-5.187042 23.907191c.156996 7.385448 1.479849 14.875357 4.972905 21.38465s9.337384 11.961229 16.458344 13.922244c4.833752 1.331211 10.056683 1.044827 14.74081 2.829827 7.560693 2.881382 12.209757 10.489626 19.01235 14.870016a25.650039 25.650039 0 0024.16316 1.698928c8.342551-3.846451 14.03857-12.107291 16.641338-20.918947s2.471077-18.187687 1.756125-27.346305c-.843101-10.912846-3.01686-22.783019-11.354287-29.869462-6.037066-5.130853-14.208558-6.772976-21.995428-8.235353z"
-                                        data-name="Path 1354" />
-                                </svg>
-                            </div>
-                            <div class="icon">
-                                <img src=" https://pwnedtech.org/images/service/branding.svg " alt="ui-ux">
-                            </div>
-                        </div>
-                        <div class="mt-5">
-                            <h4 id="branding">Branding</h4>
-<p>Lorem ipsum dolor sit amet conset sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
-                        </div>
-                    </div>
-                    
-                    <div class="service__slider_item">
-                        <div class="service__slider_item-icon">
-                            <div class="icon-background">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="122.457" height="109.702"
-                                    viewBox="0 0 122.457 109.702">
-                                    <path fill="#f1f6f9"
-                                        d="M49.855527 9.984102c-4.337424-.815024-8.766002-1.633779-13.152776-1.113889-8.196034.975107-15.344329 6.696991-19.41555 13.879649s-5.363288 15.655094-5.187042 23.907191c.156996 7.385448 1.479849 14.875357 4.972905 21.38465s9.337384 11.961229 16.458344 13.922244c4.833752 1.331211 10.056683 1.044827 14.74081 2.829827 7.560693 2.881382 12.209757 10.489626 19.01235 14.870016a25.650039 25.650039 0 0024.16316 1.698928c8.342551-3.846451 14.03857-12.107291 16.641338-20.918947s2.471077-18.187687 1.756125-27.346305c-.843101-10.912846-3.01686-22.783019-11.354287-29.869462-6.037066-5.130853-14.208558-6.772976-21.995428-8.235353z"
-                                        data-name="Path 1354" />
-                                </svg>
-                            </div>
-                            <div class="icon">
-                                <img src=" https://pwnedtech.org/images/service/ui-ux.svg " alt="ui-ux">
-                            </div>
-                        </div>
-                        <div class="mt-5">
-                            <h4 id="uiux-design">UI/UX Design</h4>
-<p>Lorem ipsum dolor sit amet conset sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
-                        </div>
-                    </div>
-                    
-                    <div class="service__slider_item">
-                        <div class="service__slider_item-icon">
-                            <div class="icon-background">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="122.457" height="109.702"
-                                    viewBox="0 0 122.457 109.702">
-                                    <path fill="#f1f6f9"
-                                        d="M49.855527 9.984102c-4.337424-.815024-8.766002-1.633779-13.152776-1.113889-8.196034.975107-15.344329 6.696991-19.41555 13.879649s-5.363288 15.655094-5.187042 23.907191c.156996 7.385448 1.479849 14.875357 4.972905 21.38465s9.337384 11.961229 16.458344 13.922244c4.833752 1.331211 10.056683 1.044827 14.74081 2.829827 7.560693 2.881382 12.209757 10.489626 19.01235 14.870016a25.650039 25.650039 0 0024.16316 1.698928c8.342551-3.846451 14.03857-12.107291 16.641338-20.918947s2.471077-18.187687 1.756125-27.346305c-.843101-10.912846-3.01686-22.783019-11.354287-29.869462-6.037066-5.130853-14.208558-6.772976-21.995428-8.235353z"
-                                        data-name="Path 1354" />
-                                </svg>
-                            </div>
-                            <div class="icon">
-                                <img src=" https://pwnedtech.org/images/service/web.svg " alt="ui-ux">
-                            </div>
-                        </div>
-                        <div class="mt-5">
-                            <h4 id="web-development">Web Development</h4>
-<p>Lorem ipsum dolor sit amet conset sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-
-
-
-<section class="section portfolio" id="portfolio">
-  <div class="container">
-    <div class="row text-center">
-      <div class="col-lg-6 offset-lg-3">
-        <div class="portfolio__header mb-5">
-          <span class="top-title">My Portfolio</span>
-          <h2 id="check-some-of-my-recent-work">Check Some of My Recent Work</h2>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-12">
-        <div class="portfolio-item-grid">
-          
-          <div class="portfolio-item">
-            <img src="images/portfolio/portfolio-1.png" class="portfolio-item-thumb" alt="portfolio-thumb" />
-            <div class="portfolio-item-content">
-              <span>Development, UX Design</span>
-              <h3 class="mb-0">
-                <a class="text-dark" href="https://pwnedtech.org/portfolio/case-study-one/">Case Study One</a>
-              </h3>
-              <a class="see-more-btn" href="https://pwnedtech.org/portfolio/case-study-one/">See details</a>
-            </div>
-          </div>
-          
-          <div class="portfolio-item">
-            <img src="images/portfolio/portfolio-2.png" class="portfolio-item-thumb" alt="portfolio-thumb" />
-            <div class="portfolio-item-content">
-              <span>Web Design, Branding</span>
-              <h3 class="mb-0">
-                <a class="text-dark" href="https://pwnedtech.org/portfolio/event-app-case-study/">Event App Case Study</a>
-              </h3>
-              <a class="see-more-btn" href="https://pwnedtech.org/portfolio/event-app-case-study/">See details</a>
-            </div>
-          </div>
-          
-          <div class="portfolio-item">
-            <img src="images/portfolio/portfolio-4.png" class="portfolio-item-thumb" alt="portfolio-thumb" />
-            <div class="portfolio-item-content">
-              <span>UX Design</span>
-              <h3 class="mb-0">
-                <a class="text-dark" href="https://pwnedtech.org/portfolio/ux-case-study-for-agriculture-app/">UX Case Study for Agriculture App</a>
-              </h3>
-              <a class="see-more-btn" href="https://pwnedtech.org/portfolio/ux-case-study-for-agriculture-app/">See details</a>
-            </div>
-          </div>
-          
-          <div class="portfolio-item">
-            <img src="images/portfolio/portfolio-3.png" class="portfolio-item-thumb" alt="portfolio-thumb" />
-            <div class="portfolio-item-content">
-              <span>UX Design, UX Research</span>
-              <h3 class="mb-0">
-                <a class="text-dark" href="https://pwnedtech.org/portfolio/recipe-app-ux-study/">Recipe App Ux Study</a>
-              </h3>
-              <a class="see-more-btn" href="https://pwnedtech.org/portfolio/recipe-app-ux-study/">See details</a>
-            </div>
-          </div>
-          
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-
-
-<section class="section resume" id="resume">
-    <div class="resume__background"></div>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="resume__heading">
-                    <div class="text-light">
-                        <span class="top-title pre-line">My Resume</span>
-                        <h2 id="my-expertises">My Expertises</h2>
-<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore</p>
-<p>Magna aliquyam erat, sed diam voluptua. At vero eos accusam justo.</p>
-
-                    </div>
-
-                    <div class="btn-group nav mt-5">
-                        <a href="#education" class="btn btn-primary active" data-toggle="tab">Education</a>
-                        <a href="#experience" class="btn btn-primary" data-toggle="tab">Experiences</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="tab-content ">
-                    <div class="resume__education tab-pane active" id="education">
-                        
-                        
-                        <div class="resume__education_item">
-                            <span class="pre-line text-primary"> 2008-2010 </span>
-                            <h4 id="master-in-arts">Master in Arts</h4>
-<p>Lorem ipsum dolor sit amet conset sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-                        </div>
-                        
-                        <div class="resume__education_item">
-                            <span class="pre-line text-primary"> 2008-2010 </span>
-                            <h4 id="master-in-arts">Master in Arts</h4>
-<p>Lorem ipsum dolor sit amet conset sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-                        </div>
-                        
-                        <div class="resume__education_item">
-                            <span class="pre-line text-primary"> 2008-2010 </span>
-                            <h4 id="master-in-arts">Master in Arts</h4>
-<p>Lorem ipsum dolor sit amet conset sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-                        </div>
-                        
-                        <div class="resume__education_item">
-                            <span class="pre-line text-primary"> 2008-2010 </span>
-                            <h4 id="master-in-arts">Master in Arts</h4>
-<p>Lorem ipsum dolor sit amet conset sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-                        </div>
-                        
-
-                    </div>
-
-                    <div class="resume__education tab-pane" id="experience">
-                        
-                        
-                        <div class="resume__education_item">
-                            <span class="pre-line text-primary"> 2016-Present </span>
-                            <h4 id="umbrella-co">Umbrella co.</h4>
-<p>Lorem ipsum dolor sit amet conset sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-                        </div>
-                        
-                        <div class="resume__education_item">
-                            <span class="pre-line text-primary"> 2010-2016 </span>
-                            <h4 id="aperture-science">Aperture Science</h4>
-<p>Lorem ipsum dolor sit amet conset sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-                        </div>
-                        
-                        <div class="resume__education_item">
-                            <span class="pre-line text-primary"> 2005-2010 </span>
-                            <h4 id="acme-inc">ACME Inc.</h4>
-<p>Lorem ipsum dolor sit amet conset sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-                        </div>
-                        
-                        <div class="resume__education_item">
-                            <span class="pre-line text-primary"> 2001-2005 </span>
-                            <h4 id="lexcorp">LexCorp</h4>
-<p>Lorem ipsum dolor sit amet conset sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-                        </div>
-                        
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-
-
-
-<section class="section skill">
-    <div class="skill__background_shape">
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 600 600">
-            <defs>
-                <linearGradient id="d" x1="0.929" y1="0.111" x2="0.263" y2="0.935" gradientUnits="objectBoundingBox">
-                    <stop offset="0" stop-color="#f1f6f9" />
-                    <stop offset="1" stop-color="#f1f6f9" stop-opacity="0" />
-                </linearGradient>
-            </defs>
-            <g data-name="blob-shape (3)">
-                <path class="blob" fill="url(#d)"
-                    d="M455.4 151.1c43.1 36.7 73.4 92.8 60.8 136.3-12.7 43.5-68.1 74.4-111.3 119.4-43.1 45-74 104.1-109.8 109-35.9 5-76.7-44.2-111.8-89.2-35.2-45-64.7-85.8-70.8-132.6-6-46.8 11.6-99.6 46.7-136.3 35.2-36.6 88-57.2 142.4-58.8 54.5-1.7 110.6 15.6 153.8 52.2z" />
-            </g>
-        </svg>
-    </div>
-    <div class="skill__background_pattern">
-        <img src="images/service/background-pattern.svg" alt="background-shape">
-    </div>
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-6">
-                <div class="skill__thumb">
-                    <div class="skill__thumb_pattern">
-                        <img src="images/hero/figure-svg.svg" alt="figure-svg">
-                    </div>
-                    <div class="skill__thumb_image">
-                        <img src="https://pwnedtech.org/images/skill/skill_image.jpg" alt="skill-img" style='
-                                        -webkit-mask: url(https://pwnedtech.org/images/skill/skill-mask-svg.svg);
-                                        -webkit-mask-repeat: no-repeat;
-                                        -webkit-mask-size: contain;
-                                        -webkit-mask-position: center center;
-                                    '>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="skill__progress">
-                    <div class="skill__progress_heading mb-5">
-                        <span class="top-title pre-line">My Skills</span>
-                        <h2 id="why-hire-me-for-your-next-project">Why hire me for your next project?</h2>
-<p>My goal is to build a strong supportive professional network among all freelancers and startups in order to improve their performance.
-                    </div>
-                    
-                    
-                    <div class="skill__progress_item">
-                        <span class="d-inline-block text-dark"> HTML </span>
-                        <div class="progress-value float-right"><span>69</span>%</div>
-                        <div class="progress">
-                            <div class="progress-bar" style="width:69%;" aria-valuemin="0"
-                                aria-valuemax="69"></div>
-                        </div>
-                    </div>
-                    
-                    <div class="skill__progress_item">
-                        <span class="d-inline-block text-dark"> CSS </span>
-                        <div class="progress-value float-right"><span>60</span>%</div>
-                        <div class="progress">
-                            <div class="progress-bar" style="width:60%;" aria-valuemin="0"
-                                aria-valuemax="60"></div>
-                        </div>
-                    </div>
-                    
-                    <div class="skill__progress_item">
-                        <span class="d-inline-block text-dark"> Javascript </span>
-                        <div class="progress-value float-right"><span>85</span>%</div>
-                        <div class="progress">
-                            <div class="progress-bar" style="width:85%;" aria-valuemin="0"
-                                aria-valuemax="85"></div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-
-
-
-<section class="section testimonial">
-    <div class="testimonial__background_shape">
-        <svg viewBox="0 0 1920 79">
-            <path d="M0 0h1920v79L0 0z" data-name="Path 1450" />
-        </svg>
-    </div>
-    <div class="container">
-        <div class="row text-center">
-            <div class="col-lg-6 offset-lg-3">
-                <div class="testimonial__header">
-                    <span class="top-title">Testimonials</span>
-                    <h2 id="what-people-are-say-about-me">What People are Say About Me?</h2>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="testimonial__slider">
-                    
-                    
-                    <div class="testimonial__slider_item">
-                        
-                        <ul class="testimonial__slider_item-rating">
-                            
-                            
-                            
-                            
-                            <li><i class="fa fa-star"></i></li>
-                            
-                            
-                            
-                            <li><i class="fa fa-star"></i></li>
-                            
-                            
-                            
-                            <li><i class="fa fa-star"></i></li>
-                            
-                            
-                            
-                            <li><i class="fa fa-star"></i></li>
-                            
-                            
-                            
-                            <li><i class="fa fa-star"></i></li>
-                            
-                            
-                        </ul>
-                        
-                        <p class="testimonial__slider_item-content"> Takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetur sad ipscing elitr sed diam nonumy eirmod tempor invidunt labore dolore magna. </p>
-                        <p class="testimonial__slider_item-author"><span>Ryan Cook</span> | Jan 20, 2020</p>
-                    </div>
-                    
-                    <div class="testimonial__slider_item">
-                        
-                        <ul class="testimonial__slider_item-rating">
-                            
-                            
-                            
-                            
-                            <li><i class="fa fa-star"></i></li>
-                            
-                            
-                            
-                            <li><i class="fa fa-star"></i></li>
-                            
-                            
-                            
-                            <li><i class="fa fa-star"></i></li>
-                            
-                            
-                            
-                            <li><i class="fa fa-star"></i></li>
-                            
-                            
-                            
-                            <li><i class="fa fa-star inactive"></i></li>
-                            
-                            
-                        </ul>
-                        
-                        <p class="testimonial__slider_item-content"> Takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetur sad ipscing elitr sed diam nonumy eirmod tempor invidunt labore dolore magna. </p>
-                        <p class="testimonial__slider_item-author"><span>Justin Trudo</span> | Jan 16, 2020</p>
-                    </div>
-                    
-                    <div class="testimonial__slider_item">
-                        
-                        <ul class="testimonial__slider_item-rating">
-                            
-                            
-                            
-                            
-                            <li><i class="fa fa-star"></i></li>
-                            
-                            
-                            
-                            <li><i class="fa fa-star"></i></li>
-                            
-                            
-                            
-                            <li><i class="fa fa-star"></i></li>
-                            
-                            
-                            
-                            <li><i class="fa fa-star inactive"></i></li>
-                            
-                            
-                            
-                            <li><i class="fa fa-star inactive"></i></li>
-                            
-                            
-                        </ul>
-                        
-                        <p class="testimonial__slider_item-content"> Takimata sanctus est lorem ipsum dolor sit amet lorem ipsum dolor sit amet consetur sad ipscing elitr sed diam nonumy eirmod tempor invidunt labore dolore magna. </p>
-                        <p class="testimonial__slider_item-author"><span>Franky Filth</span> | Mar 08, 2020</p>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-
-
-
-<section class="section blog-preview" id="blog">
-	<div class="blog-preview__shape">
-		<img src="images/blog/blog-shape.svg" alt="blog shape" />
+	<div class="block">
+		
+		<h1>Experience the new reality</h1>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, excepturi. At recusandae sit perferendis autem,iste tempora nostrum numquam sapiente!</p>
+		
+		
+		<a href="#services" class="btn btn-transparent page-scroll">Explore Us</a>
+		
+		
 	</div>
+</section>
+<!-- /Welcome Slider-->
+
+
+
+
+<section class="sticky-top navigation">
 	<div class="container">
-		<div class="row mb-5">
-			<div class="col-lg-6">
-				<div class="blog-preview__header">
-					<span class="top-title pre-line">Blog</span>
-					<h2 id="recent-article">Recent Article</h2>
-<p>Enjoy team diversity and increase their networks among others people in various fields by provided.
-				</div>
-			</div>
-			<div class="col-lg-6">
-				<div class="blog-preview__header_button desktop">
-					<a class="btn btn-outline-secondary  btn-zoom m-3" href="https://pwnedtech.org/blog">See all post</a>
-				</div>
-			</div>
-		</div>
+		<nav class="navbar navbar-expand-lg navbar-dark">
+			<a class="navbar-brand p-0" href="/">
+				
+				<img class="lozad" data-src="https://pwnedtech.org/images/pwnedtech-logo.png" alt="Pwned Tech" height="42">
+				
+			</a>
 
-		<div class="row">
-			
-			<div class="col-lg-4">
-				<div class="blog-preview__item">
-					<div class="blog-preview__item-thumb">
-						<img src="https://pwnedtech.org/images/allpost/allPost-6.jpg" alt="post-image">
-					</div>
-					<div class="blog-preview__item-content bg-white">
-						<span class="small">September 13, 2020</span>
-						<h5 class="mb-0">
-							<a class="text-dark" href="https://pwnedtech.org/blog/markdown-formatting-demo/">Markdown Formatting Demo</a>
-						</h5>
-					</div>
-				</div>
-			</div>
-			
-			<div class="col-lg-4">
-				<div class="blog-preview__item">
-					<div class="blog-preview__item-thumb">
-						<img src="https://pwnedtech.org/images/allpost/allPost-2.jpg" alt="post-image">
-					</div>
-					<div class="blog-preview__item-content bg-white">
-						<span class="small">July 13, 2020</span>
-						<h5 class="mb-0">
-							<a class="text-dark" href="https://pwnedtech.org/blog/designer-conference-at-florida-2020/">Designer Conference at Florida 2020</a>
-						</h5>
-					</div>
-				</div>
-			</div>
-			
-			<div class="col-lg-4">
-				<div class="blog-preview__item">
-					<div class="blog-preview__item-thumb">
-						<img src="https://pwnedtech.org/images/allpost/allPost-7.jpg" alt="post-image">
-					</div>
-					<div class="blog-preview__item-content bg-white">
-						<span class="small">July 13, 2020</span>
-						<h5 class="mb-0">
-							<a class="text-dark" href="https://pwnedtech.org/blog/benjamin-franklins-thoughts-about-new-designers/">Benjamin Franklins thoughts about new designers</a>
-						</h5>
-					</div>
-				</div>
-			</div>
-			
+			<button class="navbar-toggler rounded-0" type="button" data-toggle="collapse" data-target="#navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
 
-		</div>
-		<div class="row">
-			<div class="col-lg-12">
-				<div class="blog-preview__header_button mobile">
-					<a class="btn btn-outline-secondary btn-zoom" href="https://pwnedtech.org/blog">See all post</a>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
- 
-
-
-  </div>
-  <section class="footer" id="contact">
-	<div class="footer__background_shape">
-		<svg viewBox="0 0 1920 79">
-			<path d="M0 0h1920v79L0 0z" data-name="Path 1450" />
-		</svg>
-	</div>
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12">
-				<div class="footer__cta">
-					<div class="shape-1">
-						<svg xmlns="http://www.w3.org/2000/svg" width="357" height="315.029" viewBox="0 0 357 315.029">
-							<path data-name="Path 1449"
-								d="M76.1-157.222C91.746-135.8 87.2-94.273 99.993-61.945c12.7 32.328 42.661 55.459 39.248 73.282-3.318 17.823-40.007 30.337-65.6 43.325-25.5 12.988-39.912 26.545-60.01 42.566-20.1 16.116-46.074 34.6-63.328 27.682-17.349-6.921-25.976-39.153-59.915-59.82s-93.1-29.768-105.325-51.478 22.373-56.028 43.609-93.949c21.331-37.921 29.2-79.35 53.563-96.793 24.459-17.444 65.414-10.9 103.9-6.921 38.396 3.982 74.326 5.404 89.965 26.829z"
-								transform="translate(217.489 188.626)" />
-						</svg>
-					</div>
-					<div class="shape-2">
-						<svg xmlns="http://www.w3.org/2000/svg" width="357" height="315.029" viewBox="0 0 357 315.029">
-							<path data-name="Path 1449"
-								d="M76.1-157.222C91.746-135.8 87.2-94.273 99.993-61.945c12.7 32.328 42.661 55.459 39.248 73.282-3.318 17.823-40.007 30.337-65.6 43.325-25.5 12.988-39.912 26.545-60.01 42.566-20.1 16.116-46.074 34.6-63.328 27.682-17.349-6.921-25.976-39.153-59.915-59.82s-93.1-29.768-105.325-51.478 22.373-56.028 43.609-93.949c21.331-37.921 29.2-79.35 53.563-96.793 24.459-17.444 65.414-10.9 103.9-6.921 38.396 3.982 74.326 5.404 89.965 26.829z"
-								transform="translate(217.489 188.626)" />
-						</svg>
-					</div>
-					<div class="text-light footer__cta_content">
-						<span>Contact me</span>
-						<h2 class="mb-0">Let’s Start a Project</h2>
-					</div>
-					<div class="footer__cta_action">
-						<a class="btn btn-light btn-zoom" href="https://pwnedtech.org/contact">Get in
-							touch</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="row footer__widget">
-			<div class="col-lg-4">
-				<div class="footer__widget_logo mb-5">
-					<img src="https://pwnedtech.org/images/contact/widget-logo.png" alt="widget-logo">
-				</div>
-			</div>
-			<div class="col-lg-4">
-				<div class="text-light footer__widget_sitemap mb-5">
-					<h4 class="base-font">Sitemap</h4>
-					<ul class="unstyle-list small">
-						
-						
-						<li class="mb-2"><a class="text-light" href="https://pwnedtech.org/about">Información</a></li>
-						
-						<li class="mb-2"><a class="text-light" href="https://pwnedtech.org/">Latest Article</a></li>
-						
-					</ul>
-				</div>
-			</div>
-			<div class="col-lg-4">
-				<div class="text-light footer__widget_address mb-5">
-					<h4 class="base-font">Address</h4>
+			<div class="collapse navbar-collapse" id="navigation">
+				<ul class="navbar-nav ml-auto">
 					
-					<ul class="fa-ul small">
-						<li class="mb-2"><a class="text-light" href="tel:"><span class="fa-li"><i
-										class="fa fa-phone"></i></span></a></li>
-						<li class="mb-2"><a class="text-light" href="mailto:"><span class="fa-li"><i
-										class="fa fa-envelope"></i></span></a></li>
-						<li class="mb-2">
-							<span class="fa-li"><i class="fa fa-map-marker"></i></span></a>
-						</li>
-					</ul>
+					<li class="nav-item">
+            <a class="nav-link" href="https://pwnedtech.org#about">about</a>
+					</li>
+					
+					<li class="nav-item">
+            <a class="nav-link" href="https://pwnedtech.org#portfolio">portfolio</a>
+					</li>
+					
+					<li class="nav-item">
+            <a class="nav-link" href="https://pwnedtech.org#team">team</a>
+					</li>
+					
+					<li class="nav-item">
+            <a class="nav-link" href="https://pwnedtech.org#blog">blog</a>
+					</li>
+					
+					<li class="nav-item">
+            <a class="nav-link" href="https://pwnedtech.org#contact">contact</a>
+					</li>
+					
+				</ul>
+				
+			</div>
+		</nav>
+	</div>
+</section>
+
+
+
+
+
+
+<!-- Start About Section -->
+<section class="bg-one about section" id="about">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-lg-12">
+				<!-- section title -->
+				<div class="title text-center wow fadeIn" data-wow-duration="1500ms">
+					<h2>  About <span class="color">
+						 Us  </span></h2>
+					<div class="border-meghna"></div>
 				</div>
 			</div>
+			<!-- /section title -->
+
+			
+			<!-- About item -->
+			<div class="col-lg-4 text-center wow fadeInUp" data-wow-duration="500ms">
+				<div class="block">
+					<div class="icon-box">
+						<i class="ti-ruler-pencil"></i>
+					</div>
+					<!-- Express About Yourself -->
+					<div class="content text-center">
+						<h3>We&#39;re Creative</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil, libero, perspiciatis eos provident laborum eum dignissimos.</p>
+					</div>
+				</div>
+			</div>
+			
+			<!-- About item -->
+			<div class="col-lg-4 text-center wow fadeInUp" data-wow-duration="500ms">
+				<div class="block">
+					<div class="icon-box">
+						<i class="ti-cup"></i>
+					</div>
+					<!-- Express About Yourself -->
+					<div class="content text-center">
+						<h3>We&#39;re Professional</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil, libero, perspiciatis eos provident laborum eum dignissimos.</p>
+					</div>
+				</div>
+			</div>
+			
+			<!-- About item -->
+			<div class="col-lg-4 text-center wow fadeInUp" data-wow-duration="500ms">
+				<div class="block">
+					<div class="icon-box">
+						<i class="ti-thought"></i>
+					</div>
+					<!-- Express About Yourself -->
+					<div class="content text-center">
+						<h3>We&#39;re Genius</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nihil, libero, perspiciatis eos provident laborum eum dignissimos.</p>
+					</div>
+				</div>
+			</div>
+			
 		</div>
-		<div class="row footer__footer">
-			<div class="col-lg-6">
-				<div class="footer__footer_copy text-light">
-					<p>All right reserved copyright © Portio 2020</p>
-				</div>
+	</div>
+</section>
+<!-- /about -->
+
+
+
+
+
+
+
+
+<!-- feature -->
+<section class="section section-bg about-2 padding-0" id="feature">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-6 padding-0" style="background-image: url('https://pwnedtech.org/images/about/about-business-man.webp'); background-size: cover; background-position: top center; background-repeat: no-repeat; min-height: 400px;">
+				
+				<img src="https://pwnedtech.org/images/about/about-business-man.webp" style="display: none;" onerror="this.onerror=null;this.parentElement.style.backgroundImage= 'url(https:\/\/pwnedtech.org\/images\/about\/about-business-man.jpg)'">
 			</div>
 			<div class="col-lg-6">
-				<div class="footer__footer_social">
-					<ul class="unstyle-list">
+				<div class="content-block">
+					<h2>We’re A Digital Design Agency.</h2>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam tempora itaque, autem dolores culpa cum mollitia voluptate nesciunt voluptatibus quasi.</p>
+					<div class="row">
 						
+						<div class="col-lg-6">
+							<div class="media">
+								
+								<div class="align-self-start mr-3">
+									<i class="ti-world"></i>
+								</div>
+								
+								<div class="media-body">
+									<h4 class="media-heading">SEO Optimized</h4>
+									<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus consectetur dolores repellendus eos saepe</p>
+								</div>
+							</div>
+						</div>
 						
-						<li class="d-inline-block mx-2"><a class="text-light" target="_blank" href="https://twitter.com/"><i
-									class="fa fa-twitter-square"></i></a>
-						</li>
+						<div class="col-lg-6">
+							<div class="media">
+								
+								<div class="align-self-start mr-3">
+									<i class="ti-panel"></i>
+								</div>
+								
+								<div class="media-body">
+									<h4 class="media-heading">Easy Customization</h4>
+									<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus consectetur dolores repellendus eos saepe</p>
+								</div>
+							</div>
+						</div>
 						
-						<li class="d-inline-block mx-2"><a class="text-light" target="_blank" href="https://twitter.com/"><i
-									class="fa fa-instagram"></i></a>
-						</li>
+						<div class="col-lg-6">
+							<div class="media">
+								
+								<div class="align-self-start mr-3">
+									<i class="ti-stats-up"></i>
+								</div>
+								
+								<div class="media-body">
+									<h4 class="media-heading">SEO Optimized</h4>
+									<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus consectetur dolores repellendus eos saepe</p>
+								</div>
+							</div>
+						</div>
 						
-					</ul>
+						<div class="col-lg-6">
+							<div class="media">
+								
+								<div class="align-self-start mr-3">
+									<i class="ti-announcement"></i>
+								</div>
+								
+								<div class="media-body">
+									<h4 class="media-heading">Easy Customization</h4>
+									<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus consectetur dolores repellendus eos saepe</p>
+								</div>
+							</div>
+						</div>
+						
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
-<script src="https://maps.googleapis.com/maps/api/js?key=&libraries=geometry"></script>
-<script src="https://pwnedtech.org/plugins/jQuery/jquery.min.js"></script>
+<!-- /feature -->
+
+
+
+
+
+
+
+
+<!-- Start Call To Action -->
+<section id="cta" class="call-to-action section-sm bg-1 overly" style='background-image: url("https://pwnedtech.org/images/backgrounds/bg-white-wall.webp")'>
+	
+	<img src="https://pwnedtech.org/images/backgrounds/bg-white-wall.webp" style="display: none;" onerror="this.onerror=null;this.parentElement.style.backgroundImage= 'url(https:\/\/pwnedtech.org\/images\/backgrounds\/bg-white-wall.jpg)'">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<h2>Great Design &amp; Incredible Features</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis tenetur odio impedit incidunt? Omnis accusantium ea reiciendis, fugit commodi nostrum.</p>
+				
+				
+				<a href="#contact" class="btn btn-main page-scroll">Start a project with us</a>
+				
+				
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Start Services Section -->
+
+
+
+
+
+
+
+
+<!-- service -->
+<section id="services" class="bg-one section">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-lg-12">
+				<!-- section title -->
+				<div class="title text-center wow fadeIn" data-wow-duration="500ms">
+					<h2> Our <span class="color">
+						  Services </span></h2>
+					<div class="border-meghna"></div>
+				</div>
+			</div>
+			<!-- /section title -->
+
+			
+			<!-- Single Service Item -->
+			<article class="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-duration="500ms">
+				<div class="service-block text-center">
+					<div class="service-icon text-center">
+						<i class="ti-world"></i>
+					</div>
+					<h3>WordPress Theme</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus.Nullam iaculis arcu at mauris dapibus consectetur.</p>
+				</div>
+			</article>
+			<!-- End Single Service Item -->
+			
+			<!-- Single Service Item -->
+			<article class="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-duration="500ms">
+				<div class="service-block text-center">
+					<div class="service-icon text-center">
+						<i class="ti-layout"></i>
+					</div>
+					<h3>Responsive Design</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus.Nullam iaculis arcu at mauris dapibus consectetur.</p>
+				</div>
+			</article>
+			<!-- End Single Service Item -->
+			
+			<!-- Single Service Item -->
+			<article class="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-duration="500ms">
+				<div class="service-block text-center">
+					<div class="service-icon text-center">
+						<i class="ti-blackboard"></i>
+					</div>
+					<h3>Media &amp; Advertisement</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus.Nullam iaculis arcu at mauris dapibus consectetur.</p>
+				</div>
+			</article>
+			<!-- End Single Service Item -->
+			
+			<!-- Single Service Item -->
+			<article class="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-duration="500ms">
+				<div class="service-block text-center">
+					<div class="service-icon text-center">
+						<i class="ti-palette"></i>
+					</div>
+					<h3>Graphic Design</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus.Nullam iaculis arcu at mauris dapibus consectetur.</p>
+				</div>
+			</article>
+			<!-- End Single Service Item -->
+			
+			<!-- Single Service Item -->
+			<article class="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-duration="500ms">
+				<div class="service-block text-center">
+					<div class="service-icon text-center">
+						<i class="ti-package"></i>
+					</div>
+					<h3>Apps Development</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus.Nullam iaculis arcu at mauris dapibus consectetur.</p>
+				</div>
+			</article>
+			<!-- End Single Service Item -->
+			
+			<!-- Single Service Item -->
+			<article class="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-duration="500ms">
+				<div class="service-block text-center">
+					<div class="service-icon text-center">
+						<i class="ti-pulse"></i>
+					</div>
+					<h3>Networking</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus.Nullam iaculis arcu at mauris dapibus consectetur.</p>
+				</div>
+			</article>
+			<!-- End Single Service Item -->
+			
+		</div>
+	</div>
+</section>
+<!-- /service -->
+
+
+
+
+
+
+
+
+<!-- Skills -->
+<section id="skills" class="parallax-section section section-bg overly">
+	<div class="container">
+		<div class="row">
+			<!-- section title -->
+			<div class="col-lg-12">
+				<div class="title text-center">
+					<h2> Our <span class="color">
+						  Skills </span></h2>
+					<div class="border-meghna"></div>
+				</div>
+			</div>
+			<!-- /section title -->
+		</div>
+		<div class="row">
+			<div class="col-lg-6">
+				<h2>We’ve skilled in wide range of web and Other digital market tools.</h2>
+				<p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis magni explicabo cum aperiam recusandae sunt accusamus totam. Quidem quos fugiat sapiente numquam accusamus quas hic, itaque in libero reiciendis tempora!</p>
+				
+				<img class="img-fluid lozad" data-src="https://pwnedtech.org/images/about/company-growth.webp" alt="image">
+				
+			</div>
+			<div class="col-lg-6">
+				<ul class="skill-bar">
+					
+					
+					
+					<li>
+						<p><span>01- </span>Business Development</p>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+								style="width:90%">
+							</div>
+						</div>
+					</li>
+					
+					
+					<li>
+						<p><span>02- </span>Analysis</p>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+								style="width:70%">
+							</div>
+						</div>
+					</li>
+					
+					
+					<li>
+						<p><span>03- </span>Design</p>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+								style="width:80%">
+							</div>
+						</div>
+					</li>
+					
+					
+					<li>
+						<p><span>04- </span>IOS Development</p>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+								style="width:95%">
+							</div>
+						</div>
+					</li>
+					
+					
+					<li>
+						<p><span>05- </span>Android Development</p>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+								style="width:75%">
+							</div>
+						</div>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- /skill -->
+
+
+
+
+
+
+
+
+<!-- Portfolio Section -->
+<section class="portfolio section" id="portfolio">
+	<div class="container">
+		<div class="row ">
+			<div class="col-xl-12">
+				<!-- section title -->
+				<div class="title text-center">
+					<h2> Our <span class="color">
+						  Works </span></h2>
+					<div class="border-meghna"></div>
+				</div>
+				<!-- /section title -->
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="btn-group portfolio-filter btn-group-toggle justify-content-center d-flex flex-wrap"
+					data-toggle="buttons">
+					<label class="btn active">
+						<input type="radio" name="shuffle-filter" value="all" checked="checked" />All
+					</label>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<label class="btn">
+						<input type="radio" name="shuffle-filter" value="design" />Design
+					</label>
+					
+					<label class="btn">
+						<input type="radio" name="shuffle-filter" value="development" />Development
+					</label>
+					
+					<label class="btn">
+						<input type="radio" name="shuffle-filter" value="photography" />Photography
+					</label>
+					
+				</div>
+			</div>
+		</div>
+
+		<div class="row shuffle-wrapper justify-content-center">
+			<!-- portfolio item -->
+			
+			<div class="col-lg-4 col-md-6 shuffle-item"
+				data-groups="[&quot;design&quot;]">
+				<div class="portfolio-block mb-4">
+					<img class="img-fluid" src="https://pwnedtech.org/images/portfolio/portfolio-1.webp" onerror="this.onerror=null;this.src='https:\/\/pwnedtech.org\/images\/portfolio\/portfolio-1.jpg'" alt="Tag Design">
+					<div class="caption">
+						<a class="search-icon image-popup" data-effect="mfp-with-zoom" href="/images/portfolio/portfolio-1.jpg"
+							data-lightbox="image-1">
+							<i class="ti-search"></i>
+						</a>
+						<h4 class="mt-3">
+							
+							<a href="https://themefisher.com">Tag Design</a>
+							
+						</h4>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-lg-4 col-md-6 shuffle-item"
+				data-groups="[&quot;development&quot;]">
+				<div class="portfolio-block mb-4">
+					<img class="img-fluid" src="https://pwnedtech.org/images/portfolio/portfolio-2.webp" onerror="this.onerror=null;this.src='https:\/\/pwnedtech.org\/images\/portfolio\/portfolio-2.jpg'" alt="Sound system">
+					<div class="caption">
+						<a class="search-icon image-popup" data-effect="mfp-with-zoom" href="/images/portfolio/portfolio-2.jpg"
+							data-lightbox="image-1">
+							<i class="ti-search"></i>
+						</a>
+						<h4 class="mt-3">
+							
+							Sound system
+							
+						</h4>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-lg-4 col-md-6 shuffle-item"
+				data-groups="[&quot;design&quot;,&quot;development&quot;]">
+				<div class="portfolio-block mb-4">
+					<img class="img-fluid" src="https://pwnedtech.org/images/portfolio/portfolio-3.webp" onerror="this.onerror=null;this.src='https:\/\/pwnedtech.org\/images\/portfolio\/portfolio-3.jpg'" alt="Clock Product">
+					<div class="caption">
+						<a class="search-icon image-popup" data-effect="mfp-with-zoom" href="/images/portfolio/portfolio-3.jpg"
+							data-lightbox="image-1">
+							<i class="ti-search"></i>
+						</a>
+						<h4 class="mt-3">
+							
+							Clock Product
+							
+						</h4>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-lg-4 col-md-6 shuffle-item"
+				data-groups="[&quot;photography&quot;,&quot;development&quot;]">
+				<div class="portfolio-block mb-4">
+					<img class="img-fluid" src="https://pwnedtech.org/images/portfolio/portfolio-4.webp" onerror="this.onerror=null;this.src='https:\/\/pwnedtech.org\/images\/portfolio\/portfolio-4.jpg'" alt="Bottol Label">
+					<div class="caption">
+						<a class="search-icon image-popup" data-effect="mfp-with-zoom" href="/images/portfolio/portfolio-4.jpg"
+							data-lightbox="image-1">
+							<i class="ti-search"></i>
+						</a>
+						<h4 class="mt-3">
+							
+							Bottol Label
+							
+						</h4>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-lg-4 col-md-6 shuffle-item"
+				data-groups="[&quot;design&quot;]">
+				<div class="portfolio-block mb-4">
+					<img class="img-fluid" src="https://pwnedtech.org/images/portfolio/portfolio-5.webp" onerror="this.onerror=null;this.src='https:\/\/pwnedtech.org\/images\/portfolio\/portfolio-5.jpg'" alt="Shopping Bag">
+					<div class="caption">
+						<a class="search-icon image-popup" data-effect="mfp-with-zoom" href="/images/portfolio/portfolio-5.jpg"
+							data-lightbox="image-1">
+							<i class="ti-search"></i>
+						</a>
+						<h4 class="mt-3">
+							
+							Shopping Bag
+							
+						</h4>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-lg-4 col-md-6 shuffle-item"
+				data-groups="[&quot;photography&quot;]">
+				<div class="portfolio-block mb-4">
+					<img class="img-fluid" src="https://pwnedtech.org/images/portfolio/portfolio-6.webp" onerror="this.onerror=null;this.src='https:\/\/pwnedtech.org\/images\/portfolio\/portfolio-6.jpg'" alt="Tag Design">
+					<div class="caption">
+						<a class="search-icon image-popup" data-effect="mfp-with-zoom" href="/images/portfolio/portfolio-6.jpg"
+							data-lightbox="image-1">
+							<i class="ti-search"></i>
+						</a>
+						<h4 class="mt-3">
+							
+							Tag Design
+							
+						</h4>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-lg-4 col-md-6 shuffle-item"
+				data-groups="[&quot;development&quot;]">
+				<div class="portfolio-block mb-4">
+					<img class="img-fluid" src="https://pwnedtech.org/images/portfolio/portfolio-7.webp" onerror="this.onerror=null;this.src='https:\/\/pwnedtech.org\/images\/portfolio\/portfolio-7.jpg'" alt="Business Card">
+					<div class="caption">
+						<a class="search-icon image-popup" data-effect="mfp-with-zoom" href="/images/portfolio/portfolio-7.jpg"
+							data-lightbox="image-1">
+							<i class="ti-search"></i>
+						</a>
+						<h4 class="mt-3">
+							
+							Business Card
+							
+						</h4>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-lg-4 col-md-6 shuffle-item"
+				data-groups="[&quot;design&quot;,&quot;development&quot;]">
+				<div class="portfolio-block mb-4">
+					<img class="img-fluid" src="https://pwnedtech.org/images/portfolio/portfolio-8.webp" onerror="this.onerror=null;this.src='https:\/\/pwnedtech.org\/images\/portfolio\/portfolio-8.jpg'" alt="Stationary Design">
+					<div class="caption">
+						<a class="search-icon image-popup" data-effect="mfp-with-zoom" href="/images/portfolio/portfolio-8.jpg"
+							data-lightbox="image-1">
+							<i class="ti-search"></i>
+						</a>
+						<h4 class="mt-3">
+							
+							Stationary Design
+							
+						</h4>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-lg-4 col-md-6 shuffle-item"
+				data-groups="[&quot;design&quot;,&quot;photography&quot;]">
+				<div class="portfolio-block mb-4">
+					<img class="img-fluid" src="https://pwnedtech.org/images/portfolio/portfolio-2.webp" onerror="this.onerror=null;this.src='https:\/\/pwnedtech.org\/images\/portfolio\/portfolio-2.jpg'" alt="Tag Design">
+					<div class="caption">
+						<a class="search-icon image-popup" data-effect="mfp-with-zoom" href="/images/portfolio/portfolio-2.jpg"
+							data-lightbox="image-1">
+							<i class="ti-search"></i>
+						</a>
+						<h4 class="mt-3">
+							
+							Tag Design
+							
+						</h4>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</section>
+<!-- /Portfolio -->
+
+
+
+
+
+
+
+
+<!-- Start Counter Section -->
+<section id="counter" class="parallax-section bg-1 section overly" style='background-image: url("https://pwnedtech.org/images/backgrounds/bg-white-wall.webp")'>
+	
+	<img class="lozad" style="display: none;" onerror="this.onerror=null;this.parentElement.style.backgroundImage= 'url(https:\/\/pwnedtech.org\/images\/backgrounds\/bg-white-wall.jpg)'" data-src="https://pwnedtech.org/images/backgrounds/bg-white-wall.webp" />
+	<div class="container">
+		<div class="row justify-content-center">
+			
+			<div class="col-lg-3 col-md-6 col-12 text-center wow fadeInDown" data-wow-duration="500ms">
+				<div class="counters-item">
+					<i class="ti-face-smile"></i>
+					<span class="count" data-count="320">0</span>
+					<h3>Happy Clients</h3>
+				</div>
+			</div>
+			
+			<div class="col-lg-3 col-md-6 col-12 text-center wow fadeInDown" data-wow-duration="500ms">
+				<div class="counters-item">
+					<i class="ti-archive"></i>
+					<span class="count" data-count="350">0</span>
+					<h3>Projects completed</h3>
+				</div>
+			</div>
+			
+			<div class="col-lg-3 col-md-6 col-12 text-center wow fadeInDown" data-wow-duration="500ms">
+				<div class="counters-item">
+					<i class="ti-thumb-up"></i>
+					<span class="count" data-count="158">0</span>
+					<h3>Positive feedback</h3>
+				</div>
+			</div>
+			
+			<div class="col-lg-3 col-md-6 col-12 text-center wow fadeInDown" data-wow-duration="500ms">
+				<div class="counters-item">
+					<i class="ti-gift"></i>
+					<span class="count" data-count="250">0</span>
+					<h3>Cups of Coffee</h3>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</section>
+<!-- /Counter Section -->
+
+
+
+
+
+
+
+
+<!-- Start Our Team -->
+<section id="team" class="section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-12">
+        <!-- section title -->
+        <div class="title text-center wow fadeInUp" data-wow-duration="500ms">
+          <h2> Our <span class="color">
+              Team </span></h2>
+          <div class="border-meghna"></div>
+        </div>
+      </div>
+      <!-- /section title -->
+
+      
+      <!-- team member -->
+      <div class="col-lg-3 col-md-6 col-12 wow fadeInDown" data-wow-duration="500ms">
+        <div class="team-member">
+          <div class="member-photo">
+            <!-- member photo -->
+            <img class="img-fluid lozad" data-src="https://pwnedtech.org/images/team/team-1.webp" onerror="this.onerror=null;this.src='https:\/\/pwnedtech.org\/images\/team\/team-1.jpg'" alt="Abul Mal Muhit">
+
+            <!-- member social profile -->
+            <div class="mask">
+              <ul class="list-inline">
+                
+                <li class="list-inline-item"><a href="#"><i class="ti-facebook"></i></a></li>
+                
+                <li class="list-inline-item"><a href="#"><i class="ti-twitter-alt"></i></a></li>
+                
+                <li class="list-inline-item"><a href="#"><i class="ti-linkedin"></i></a></li>
+                
+                <li class="list-inline-item"><a href="#"><i class="ti-dribbble"></i></a></li>
+                
+              </ul>
+            </div>
+          </div>
+
+          <!-- member name & designation -->
+          <div class="member-meta">
+            <h4>Abul Mal Muhit</h4>
+            <span>CEO/Founder</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.</p>
+          </div>
+        </div>
+      </div>
+      <!-- end team member -->
+      
+      <!-- team member -->
+      <div class="col-lg-3 col-md-6 col-12 wow fadeInDown" data-wow-duration="500ms">
+        <div class="team-member">
+          <div class="member-photo">
+            <!-- member photo -->
+            <img class="img-fluid lozad" data-src="https://pwnedtech.org/images/team/team-2.webp" onerror="this.onerror=null;this.src='https:\/\/pwnedtech.org\/images\/team\/team-2.jpg'" alt="Frank Miller">
+
+            <!-- member social profile -->
+            <div class="mask">
+              <ul class="list-inline">
+                
+                <li class="list-inline-item"><a href="#"><i class="ti-facebook"></i></a></li>
+                
+                <li class="list-inline-item"><a href="#"><i class="ti-twitter-alt"></i></a></li>
+                
+                <li class="list-inline-item"><a href="#"><i class="ti-linkedin"></i></a></li>
+                
+                <li class="list-inline-item"><a href="#"><i class="ti-dribbble"></i></a></li>
+                
+              </ul>
+            </div>
+          </div>
+
+          <!-- member name & designation -->
+          <div class="member-meta">
+            <h4>Frank Miller</h4>
+            <span>Manager</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.</p>
+          </div>
+        </div>
+      </div>
+      <!-- end team member -->
+      
+      <!-- team member -->
+      <div class="col-lg-3 col-md-6 col-12 wow fadeInDown" data-wow-duration="500ms">
+        <div class="team-member">
+          <div class="member-photo">
+            <!-- member photo -->
+            <img class="img-fluid lozad" data-src="https://pwnedtech.org/images/team/team-3.webp" onerror="this.onerror=null;this.src='https:\/\/pwnedtech.org\/images\/team\/team-3.jpg'" alt="Michael Jonson">
+
+            <!-- member social profile -->
+            <div class="mask">
+              <ul class="list-inline">
+                
+                <li class="list-inline-item"><a href="#"><i class="ti-facebook"></i></a></li>
+                
+                <li class="list-inline-item"><a href="#"><i class="ti-twitter-alt"></i></a></li>
+                
+                <li class="list-inline-item"><a href="#"><i class="ti-linkedin"></i></a></li>
+                
+                <li class="list-inline-item"><a href="#"><i class="ti-dribbble"></i></a></li>
+                
+              </ul>
+            </div>
+          </div>
+
+          <!-- member name & designation -->
+          <div class="member-meta">
+            <h4>Michael Jonson</h4>
+            <span>Web Developer</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.</p>
+          </div>
+        </div>
+      </div>
+      <!-- end team member -->
+      
+      <!-- team member -->
+      <div class="col-lg-3 col-md-6 col-12 wow fadeInDown" data-wow-duration="500ms">
+        <div class="team-member">
+          <div class="member-photo">
+            <!-- member photo -->
+            <img class="img-fluid lozad" data-src="https://pwnedtech.org/images/team/team-4.webp" onerror="this.onerror=null;this.src='https:\/\/pwnedtech.org\/images\/team\/team-4.jpg'" alt="Mo. Kha. Alamgir">
+
+            <!-- member social profile -->
+            <div class="mask">
+              <ul class="list-inline">
+                
+                <li class="list-inline-item"><a href="#"><i class="ti-facebook"></i></a></li>
+                
+                <li class="list-inline-item"><a href="#"><i class="ti-twitter-alt"></i></a></li>
+                
+                <li class="list-inline-item"><a href="#"><i class="ti-linkedin"></i></a></li>
+                
+                <li class="list-inline-item"><a href="#"><i class="ti-dribbble"></i></a></li>
+                
+              </ul>
+            </div>
+          </div>
+
+          <!-- member name & designation -->
+          <div class="member-meta">
+            <h4>Mo. Kha. Alamgir</h4>
+            <span>SEO Specialist</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.</p>
+          </div>
+        </div>
+      </div>
+      <!-- end team member -->
+      
+    </div>
+  </div>
+</section>
+<!-- /team -->
+
+
+
+
+
+
+
+
+<!-- Start Pricing section -->
+<section id="pricing" class="pricing section">
+  <div class="container">
+    <div class="row justify-content-center">
+
+      <!-- section title -->
+      <div class="col-lg-12">
+        <div class="title text-center wow fadeInDown" data-wow-duration="500ms">
+					<h2> Our <span class="color">
+              Plans </span></h2>
+          <div class="border-meghna"></div>
+        </div>
+      </div>
+      <!-- /section title -->
+
+      
+      <!-- single pricing table -->
+      <div class="col-lg-3 col-md-6 col-12 text-center wow fadeInUp" data-wow-duration="200ms">
+        <div class="price-item">
+
+          <!-- plan name & value -->
+          <div class="price-title">
+            <h3>Free</h3>
+            <p><strong class="value">$99</strong>/ month</p>
+          </div>
+
+          <!-- plan description -->
+          <ul>
+            
+            <li>1GB Disk Space</li>
+            
+            <li>10 Email Account</li>
+            
+            <li>Script Installer</li>
+            
+            <li>1 GB Storage</li>
+            
+            <li>10 GB Bandwidth</li>
+            
+            <li>24/7 Tech Support</li>
+            
+          </ul>
+
+          <!-- signup button -->
+          
+          <a class="btn btn-transparent" href="#">Signup</a>
+          
+        </div>
+      </div>
+      <!-- end single pricing table -->
+      
+      <!-- single pricing table -->
+      <div class="col-lg-3 col-md-6 col-12 text-center wow fadeInUp" data-wow-duration="200ms">
+        <div class="price-item">
+
+          <!-- plan name & value -->
+          <div class="price-title">
+            <h3>Silver</h3>
+            <p><strong class="value">$149</strong>/ month</p>
+          </div>
+
+          <!-- plan description -->
+          <ul>
+            
+            <li>1GB Disk Space</li>
+            
+            <li>10 Email Account</li>
+            
+            <li>Script Installer</li>
+            
+            <li>1 GB Storage</li>
+            
+            <li>10 GB Bandwidth</li>
+            
+            <li>24/7 Tech Support</li>
+            
+          </ul>
+
+          <!-- signup button -->
+          
+          <a class="btn btn-transparent" href="#">Signup</a>
+          
+        </div>
+      </div>
+      <!-- end single pricing table -->
+      
+      <!-- single pricing table -->
+      <div class="col-lg-3 col-md-6 col-12 text-center wow fadeInUp" data-wow-duration="200ms">
+        <div class="price-item">
+
+          <!-- plan name & value -->
+          <div class="price-title">
+            <h3>Gold</h3>
+            <p><strong class="value">$199</strong>/ month</p>
+          </div>
+
+          <!-- plan description -->
+          <ul>
+            
+            <li>1GB Disk Space</li>
+            
+            <li>10 Email Account</li>
+            
+            <li>Script Installer</li>
+            
+            <li>1 GB Storage</li>
+            
+            <li>10 GB Bandwidth</li>
+            
+            <li>24/7 Tech Support</li>
+            
+          </ul>
+
+          <!-- signup button -->
+          
+          <a class="btn btn-transparent" href="#">Signup</a>
+          
+        </div>
+      </div>
+      <!-- end single pricing table -->
+      
+      <!-- single pricing table -->
+      <div class="col-lg-3 col-md-6 col-12 text-center wow fadeInUp" data-wow-duration="200ms">
+        <div class="price-item">
+
+          <!-- plan name & value -->
+          <div class="price-title">
+            <h3>Platinum</h3>
+            <p><strong class="value">$299</strong>/ month</p>
+          </div>
+
+          <!-- plan description -->
+          <ul>
+            
+            <li>1GB Disk Space</li>
+            
+            <li>10 Email Account</li>
+            
+            <li>Script Installer</li>
+            
+            <li>1 GB Storage</li>
+            
+            <li>10 GB Bandwidth</li>
+            
+            <li>24/7 Tech Support</li>
+            
+          </ul>
+
+          <!-- signup button -->
+          
+          <a class="btn btn-transparent" href="#">Signup</a>
+          
+        </div>
+      </div>
+      <!-- end single pricing table -->
+      
+    </div>
+  </div>
+</section>
+<!-- /pricing -->
+
+
+
+
+
+
+
+
+<!-- Start Testimonial -->
+<section id="testimonial" class="testimonial overly section bg-2"
+	style='background-image: url("https://pwnedtech.org/images/backgrounds/bg-testimonial.webp")'>
+	
+	<img src="https://pwnedtech.org/images/backgrounds/bg-testimonial.webp" style="display: none;" onerror="this.onerror=null;this.parentElement.style.backgroundImage= 'url(https:\/\/pwnedtech.org\/images\/backgrounds\/bg-testimonial.jpg)'">
+	<div class="container">
+		<div class="row">
+			<div class="col-xl-12">
+				<!-- testimonial wrapper -->
+				<div id="testimonials" class="wow fadeInUp" data-wow-duration="500ms" data-wow-delay="100ms">
+					
+					<!-- testimonial single -->
+					<div class="item text-center">
+
+						<!-- client photo -->
+						<div class="client-thumb">
+							<img class="img-fluid lozad" data-src="https://pwnedtech.org/images/client/client-1.webp" onerror="this.onerror=null;this.src='https:\/\/pwnedtech.org\/images\/client\/client-1.jpg'" alt="Jonathon Andrew">
+						</div>
+
+						<!-- client info -->
+						<div class="client-info">
+							<div class="client-meta">
+								<h3>Jonathon Andrew</h3>
+								<span>Dec 26, 2018</span>
+							</div>
+							<div class="client-comment">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium minima ex, quia error, deserunt voluptatibus repellendus? Incidunt eligendi aliquam repellat molestias, vel sed optio rem odit quis ratione non consequuntur!</p>
+							</div>
+						</div>
+					</div>
+					<!-- /testimonial single -->
+					
+					<!-- testimonial single -->
+					<div class="item text-center">
+
+						<!-- client photo -->
+						<div class="client-thumb">
+							<img class="img-fluid lozad" data-src="https://pwnedtech.org/images/client/client-2.webp" onerror="this.onerror=null;this.src='https:\/\/pwnedtech.org\/images\/client\/client-2.jpg'" alt="Mark Dinn">
+						</div>
+
+						<!-- client info -->
+						<div class="client-info">
+							<div class="client-meta">
+								<h3>Mark Dinn</h3>
+								<span>Dec 26, 2018</span>
+							</div>
+							<div class="client-comment">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium minima ex, quia error, deserunt voluptatibus repellendus? Incidunt eligendi aliquam repellat molestias, vel sed optio rem odit quis ratione non consequuntur!</p>
+							</div>
+						</div>
+					</div>
+					<!-- /testimonial single -->
+					
+					<!-- testimonial single -->
+					<div class="item text-center">
+
+						<!-- client photo -->
+						<div class="client-thumb">
+							<img class="img-fluid lozad" data-src="https://pwnedtech.org/images/client/client-1.webp" onerror="this.onerror=null;this.src='https:\/\/pwnedtech.org\/images\/client\/client-1.jpg'" alt="Lemos Kail">
+						</div>
+
+						<!-- client info -->
+						<div class="client-info">
+							<div class="client-meta">
+								<h3>Lemos Kail</h3>
+								<span>Dec 26, 2018</span>
+							</div>
+							<div class="client-comment">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium minima ex, quia error, deserunt voluptatibus repellendus? Incidunt eligendi aliquam repellat molestias, vel sed optio rem odit quis ratione non consequuntur!</p>
+							</div>
+						</div>
+					</div>
+					<!-- /testimonial single -->
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- /testimonial -->
+
+
+
+
+
+<!-- Start Blog Section -->
+<section id="blog" class="section">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-lg-12">
+				<!-- section title -->
+				<div class="title text-center wow fadeInDown">
+					<h2>  Latest <span class="color">
+							 Post  </span></h2>
+					<div class="border-meghna"></div>
+				</div>
+			</div>
+			<!-- /section title -->
+
+			
+			<article class="col-lg-4 col-md-6 col-12 clearfix wow fadeInUp mb-4" data-wow-duration="500ms">
+  <div class="post-block">
+    <div class="media-wrapper">
+      <img class="img-fluid lozad" data-src="https://pwnedtech.org/images/blog/blog-post-2.webp" onerror="this.onerror=null;this.src='https:\/\/pwnedtech.org\/images\/blog\/blog-post-2.jpg'">
+    </div>
+
+    <div class="content">
+      <h3><a href="https://pwnedtech.org/blog/simple-blog-post-8/">Are You Doing the Right Way</a></h3>
+      <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>
+      <a class="btn btn-transparent" href="https://pwnedtech.org/blog/simple-blog-post-8/">Read more</a>
+    </div>
+  </div>
+</article>
+
+			
+			<article class="col-lg-4 col-md-6 col-12 clearfix wow fadeInUp mb-4" data-wow-duration="500ms">
+  <div class="post-block">
+    <div class="media-wrapper">
+      <img class="img-fluid lozad" data-src="https://pwnedtech.org/images/blog/meghna.webp" onerror="this.onerror=null;this.src='https:\/\/pwnedtech.org\/images\/blog\/meghna.jpg'">
+    </div>
+
+    <div class="content">
+      <h3><a href="https://pwnedtech.org/blog/installation/">How To Setup Meghna Hugo</a></h3>
+      <p>Install this template by following those simple steps: STEP-1 : Hugo installation Check this link below for install hugo on your computer.</p>
+      <a class="btn btn-transparent" href="https://pwnedtech.org/blog/installation/">Read more</a>
+    </div>
+  </div>
+</article>
+
+			
+			<article class="col-lg-4 col-md-6 col-12 clearfix wow fadeInUp mb-4" data-wow-duration="500ms">
+  <div class="post-block">
+    <div class="media-wrapper">
+      <img class="img-fluid lozad" data-src="https://pwnedtech.org/images/blog/blog-post-3.webp" onerror="this.onerror=null;this.src='https:\/\/pwnedtech.org\/images\/blog\/blog-post-3.jpg'">
+    </div>
+
+    <div class="content">
+      <h3><a href="https://pwnedtech.org/blog/simple-blog-post-1/">Simple Blog Post</a></h3>
+      <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>
+      <a class="btn btn-transparent" href="https://pwnedtech.org/blog/simple-blog-post-1/">Read more</a>
+    </div>
+  </div>
+</article>
+
+			
+
+			<div class="all-post text-center col-lg-12">
+				<a class="btn btn-main" href="https://pwnedtech.org/blog">View All Post</a>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- /blog -->
+
+
+
+
+
+
+<!-- Start Contact Us -->
+<section id="contact" class="contact-us section-bg">
+	<div class="container pb-5">
+		<div class="row">
+			<div class="col-lg-12">
+				<!-- section title -->
+				<div class="title text-center wow fadeIn" data-wow-duration="500ms">
+					<h2> Contact <span class="color">
+							  Us </span></h2>
+					<div class="border-meghna"></div>
+				</div>
+			</div>
+			<!-- /section title -->
+
+			<!-- Contact Details -->
+			<div class="contact-info col-lg-6 wow fadeInUp" data-wow-duration="500ms">
+				<h3>Contact Details</h3>
+				<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, vero, provident, eum eligendi blanditiis ex explicabo vitae nostrum facilis asperiores dolorem illo officiis ratione vel fugiat dicta laboriosam labore adipisci. </p>
+
+				
+				<div class="contact-details">
+					
+					<div class="con-info clearfix">
+						<i class="ti-location-pin"></i>
+						<span>Khaja Road, Bayzid, Chittagong, Bangladesh</span>
+					</div>
+					
+					<div class="con-info clearfix">
+						<i class="ti-mobile"></i>
+						<span>Phone: &#43;880-31-000-000</span>
+					</div>
+					
+					<div class="con-info clearfix">
+						<i class="ti-printer"></i>
+						<span>Fax: &#43;880-31-000-000</span>
+					</div>
+					
+					<div class="con-info clearfix">
+						<i class="ti-email"></i>
+						<span>Email: hello@meghna.com</span>
+					</div>
+					
+				</div>
+				
+			</div>
+
+			<!-- Contact Form -->
+			
+			
+			<div class="col-lg-6 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
+				<form id="contact-form" class="form-meghna" method="post" action="#" role="form">
+					<div class="form-group">
+						<input type="text" placeholder="Your Name" class="form-control" name="name" id="name">
+					</div>
+					<div class="form-group">
+						<input type="email" placeholder="Your Email" class="form-control" name="email" id="email">
+					</div>
+					<div class="form-group">
+						<input type="text" placeholder="Subject" class="form-control" name="subject" id="subject">
+					</div>
+					<div class="form-group">
+						<textarea rows="6" placeholder="Message" class="form-control" name="message" id="message"></textarea>
+					</div>
+					<div id="cf-submit">
+						<button type="submit" id="contact-submit" class="btn btn-transparent btn-block"
+							value="Submit">Submit</button>
+					</div>
+				</form>
+			</div>
+			
+			
+		</div>
+	</div>
+</section>
+<!-- /contact -->
+
+
+
+
+
+
+
+  </div><!-- end Contact Area -->
+<footer id="footer" class="section-bg">
+	<div class="container">
+		<div class="row wow fadeInUp" data-wow-duration="500ms">
+			<div class="col-xl-12">
+
+				<!-- Footer Social Links -->
+				<div class="social-icon">
+					<ul class="list-inline">
+						
+						<li class="list-inline-item"><a href="#"><i class="ti-twitter-alt"></i></a></li>
+						
+						<li class="list-inline-item"><a href="#"><i class="ti-youtube"></i></a></li>
+						
+						<li class="list-inline-item"><a href="#"><i class="ti-instagram"></i></a></li>
+						
+					</ul>
+				</div>
+
+				<!-- copyright -->
+				<div class="copyright text-center">
+					<a href="https://pwnedtech.org/">
+						<img src="https://pwnedtech.org/images/pwnedtech-logo.png" alt="Pwned Tech" height="42" />
+					</a>
+					<br>
+					<p>Copyright © 2020 Designed by <a href="https://themefisher.com">Themefisher</a> &amp; Developed by <a href="https://gethugothemes.com">Gethugothemes</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- /footer -->
+
+<!-- Google Map API -->
+
+
+<!-- JS Plugins -->
+
+<script src="https://pwnedtech.org/plugins/jquery/jquery.min.js"></script>
+
 <script src="https://pwnedtech.org/plugins/bootstrap/bootstrap.min.js"></script>
-<script src="https://pwnedtech.org/plugins/slick/slick.min.js"></script>
-<script src="https://pwnedtech.org/plugins/slick/slick.min.js"></script>
-<script src="https://pwnedtech.org/plugins/waypoint/jquery.waypoints.min.js"></script>
-<script src="https://pwnedtech.org/plugins/magnafic-popup/jquery.magnific-popup.min.js"></script>
-<script src="https://pwnedtech.org/plugins/tweenmax/TweenMax.min.js"></script>
-<script src="https://pwnedtech.org/plugins/imagesloaded/imagesloaded.min.js"></script>
-<script src="https://pwnedtech.org/plugins/masonry/masonry.min.js"></script>
 
-<script src="https://pwnedtech.org/js/form-handler.min.js"></script>
+<script src="https://pwnedtech.org/plugins/slick/slick.min.js"></script>
 
-<script src="https://pwnedtech.org/js/script.min.js"></script>
+<script src="https://pwnedtech.org/plugins/shuffle/shuffle.min.js"></script>
+
+<script src="https://pwnedtech.org/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+<script src="https://pwnedtech.org/plugins/lazy-load/lozad.min.js"></script>
+
+<script src="https://pwnedtech.org/plugins/google-map/map.js"></script>
+
+
+<!-- Main Script -->
+
+<script src="https://pwnedtech.org/js/script.min.a04247499d1b47349e9b15e536b4303bff63b1b6b8b5b74605302e956ed68179703fe8d52b0c3b0d9022d056576c679f.js" integrity="sha384-oEJHSZ0bRzSemxXlNrQwO/9jsba4tbdGBTAulW7WgXlwP&#43;jVKww7DZAi0FZXbGef"></script>
+
+
 </body>
 
 </html>

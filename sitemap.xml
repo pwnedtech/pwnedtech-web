@@ -3,83 +3,62 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://pwnedtech.org/blog/markdown-formatting-demo/</loc>
-    <lastmod>2020-09-13T12:49:27+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://pwnedtech.org/</loc>
-    <lastmod>2020-09-13T12:49:27+06:00</lastmod>
+    <loc>https://pwnedtech.org/blog/simple-blog-post-8/</loc>
+    <lastmod>2018-09-12T14:51:12+06:00</lastmod>
   </url>
   
   <url>
     <loc>https://pwnedtech.org/blog/</loc>
-    <lastmod>2020-09-13T12:49:27+06:00</lastmod>
+    <lastmod>2018-09-12T14:51:12+06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://pwnedtech.org/portfolio/</loc>
-    <lastmod>2020-08-12T18:19:35+06:00</lastmod>
+    <loc>https://pwnedtech.org/blog/installation/</loc>
+    <lastmod>2018-09-12T14:51:12+06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://pwnedtech.org/portfolio/recipe-app-ux-study/</loc>
-    <lastmod>2020-08-12T18:19:35+06:00</lastmod>
+    <loc>https://pwnedtech.org/</loc>
+    <lastmod>2018-09-12T14:51:12+06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://pwnedtech.org/portfolio/ux-case-study-for-agriculture-app/</loc>
-    <lastmod>2020-08-12T12:13:40+00:00</lastmod>
+    <loc>https://pwnedtech.org/blog/simple-blog-post-1/</loc>
+    <lastmod>2018-09-12T12:52:36+06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://pwnedtech.org/portfolio/event-app-case-study/</loc>
-    <lastmod>2020-08-12T18:07:16+06:00</lastmod>
+    <loc>https://pwnedtech.org/blog/simple-blog-post-2/</loc>
+    <lastmod>2018-09-12T12:52:36+06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://pwnedtech.org/blog/designer-conference-at-florida-2020/</loc>
-    <lastmod>2020-07-13T13:06:26+06:00</lastmod>
+    <loc>https://pwnedtech.org/blog/simple-blog-post-3/</loc>
+    <lastmod>2018-09-12T12:52:36+06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://pwnedtech.org/blog/benjamin-franklins-thoughts-about-new-designers/</loc>
-    <lastmod>2020-07-13T12:49:27+06:00</lastmod>
+    <loc>https://pwnedtech.org/blog/simple-blog-post-4/</loc>
+    <lastmod>2018-09-12T12:52:36+06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://pwnedtech.org/portfolio/case-study-one/</loc>
-    <lastmod>2020-07-13T12:49:27+06:00</lastmod>
+    <loc>https://pwnedtech.org/blog/simple-blog-post-5/</loc>
+    <lastmod>2018-09-12T12:52:36+06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://pwnedtech.org/blog/designers-thoughts-about-mobile-ui/</loc>
-    <lastmod>2020-07-13T12:49:27+06:00</lastmod>
+    <loc>https://pwnedtech.org/blog/simple-blog-post-6/</loc>
+    <lastmod>2018-09-12T12:52:36+06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://pwnedtech.org/blog/how-to-become-acreative-designer/</loc>
-    <lastmod>2020-07-13T12:49:27+06:00</lastmod>
+    <loc>https://pwnedtech.org/blog/simple-blog-post-7/</loc>
+    <lastmod>2018-09-12T12:52:36+06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://pwnedtech.org/blog/new-designers-limitations/</loc>
-    <lastmod>2020-07-13T12:49:27+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://pwnedtech.org/blog/things-you-must-know-as-a-designer/</loc>
-    <lastmod>2020-07-13T12:49:27+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://pwnedtech.org/blog/world-most-famous-app-developers-and-designers/</loc>
-    <lastmod>2020-07-13T12:49:27+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://pwnedtech.org/blog/you-must-know-this-before-becoming-a-designer/</loc>
-    <lastmod>2020-07-13T12:49:27+06:00</lastmod>
+    <loc>https://pwnedtech.org/author/</loc>
   </url>
   
   <url>
@@ -87,7 +66,11 @@
   </url>
   
   <url>
-    <loc>https://pwnedtech.org/contact/</loc>
+    <loc>https://pwnedtech.org/author/john-doe/</loc>
+  </url>
+  
+  <url>
+    <loc>https://pwnedtech.org/author/mark-dinn/</loc>
   </url>
   
   <url>
