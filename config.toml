@@ -1,67 +1,114 @@
-baseURL = "https://pwnedtech.org/"
-languageCode = "en-us"
-paginate = 5
-theme = "portio"
-title = "PwnedTech"
-# Main Menu
-[[menu.main]]
-name = "Inicio"
-url = "#home"
-weight = 1
-[[menu.main]]
-name = "Información"
-url = "#about"
-weight = 2
-[[menu.main]]
-name = "Contacto"
-url = "#contact"
-weight = 3
+################################# Default configuration ###################
+baseURL = "https://pwnedtech.org"
+title = "Pwned Tech"
+theme = "meghna-hugo"
+paginate = "5"
+summaryLength = "15"
 
-# Sitemap Menu
-[[menu.sitemap]]
-name = "Información"
+############################# Plugins ##########################
+# css plugins
+[[params.plugins.css]]
+link = "plugins/bootstrap/bootstrap.min.css"
+[[params.plugins.css]]
+link = "plugins/themify-icons/themify-icons.css"
+[[params.plugins.css]]
+link = "plugins/magnific-popup/magnific-popup.css"
+[[params.plugins.css]]
+link = "plugins/slick/slick.css"
+[[params.plugins.css]]
+link = "https://fonts.googleapis.com/css?family=Anaheim|Quattrocento+Sans:400,700&display=swap"
+
+# js plugins
+[[params.plugins.js]]
+link = "plugins/jquery/jquery.min.js"
+[[params.plugins.js]]
+link = "plugins/bootstrap/bootstrap.min.js"
+[[params.plugins.js]]
+link = "plugins/slick/slick.min.js"
+[[params.plugins.js]]
+link = "plugins/shuffle/shuffle.min.js"
+[[params.plugins.js]]
+link = "plugins/magnific-popup/jquery.magnific-popup.min.js"
+[[params.plugins.js]]
+link = "plugins/lazy-load/lozad.min.js"
+[[params.plugins.js]]
+link = "plugins/google-map/map.js"
+
+################### English Navigation ########################
+[[Languages.en.menu.main]]
+name = "about"
+pre = "#"
 url = "about"
 weight = 1
-#[[menu.sitemap]]
-#name = "Frequently Ask Question"
-#url = "#"
-#weight = 2
-#[[menu.sitemap]]
-#name = "Privacy & Policy"
-#url = "#"
-#weight = 3
-[[menu.sitemap]]
-name = "Latest Article"
-url = "#"
+
+[[Languages.en.menu.main]]
+name = "portfolio"
+pre = "#"
+url = "portfolio"
 weight = 2
 
+[[Languages.en.menu.main]]
+name = "team"
+pre = "#"
+url = "team"
+weight = 3
+
+[[Languages.en.menu.main]]
+name = "blog"
+pre = "#"
+url = "blog"
+weight = 4
+
+[[Languages.en.menu.main]]
+name = "contact"
+pre = "#"
+url = "contact"
+weight = 5
+
+############################# Default Parameters ##########################
 [params]
-blogPageURL = "blog"
-contactLink = "contact"
-copyright = "All right reserved copyright © Portio 2020"
-footerLogo = "images/contact/widget-logo.png"
-formspreeURL = "YOUR FORMSPREE URL"
-googleAnalytics = "YOUR GOOGLE ANALYTICS CODE"
-logo = "images/site-navigation/logo.png"
+logo = "images/pwnedtech-logo.png"
+description = "Cybersecurity for world"
+author = "PwnedTech"
+google_analytics_id = "" # Your ID
+post_share = true
 
-#[params.address]
-#address = "23 Khan Niketon, Grand Street, NYK."
-#email = "hello@example.com"
-#openingHours = "Open from 10am to 6pm (close at 5pm Sundays)"
-#phone = "+(448) 833 5272 332"
+# preloader
+[params.preloader]
+enable = false
+preloader = "images/pwnedtech-logo.png"
 
-#[params.map]
-#APIkey = "YOUR GOOGLE MAP API"
-#latitude = "23.7783741"
-#longitude = "90.3746808"
-#pinImage = "images/pin.png"
+# cookies
+[params.cookies]
+enable = false
+expire_days = 2
 
-# Social icons
+# google map
+[params.map]
+enable = false
+gmap_api = "https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"
+map_latitude = "51.5223477"
+map_longitude = "-0.1622023"
+map_marker = "images/marker.png"
+
+############################# social icons ##########################
 [[params.social]]
-icon = "fa-twitter-square"
-url = "https://twitter.com/pwnedtech"
-weight = 1
+icon = "ti-twitter-alt" # themify icon pack : https://themify.me/themify-icons
+link = "#"
+
 [[params.social]]
-icon = "fa-instagram"
-url = "https://www.instagram.com/pwnedtech"
+icon = "ti-youtube" # themify icon pack : https://themify.me/themify-icons
+link = "#"
+
+[[params.social]]
+icon = "ti-instagram" # themify icon pack : https://themify.me/themify-icons
+link = "#"
+
+################################ English Language ########################
+[Languages.en]
+languageName = "En"
+languageCode = "en-us"
+contentDir = "content/english"
 weight = 1
+home = "Home"
+copyright = "Copyright &copy; 2020 Designed by [Themefisher](https://themefisher.com) & Developed by [Gethugothemes](https://gethugothemes.com)"
