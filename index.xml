@@ -10,5 +10,24 @@
 	<atom:link href="https://pwnedtech.org/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>Charlas</title>
+      <link>https://pwnedtech.org/charlas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pwnedtech.org/charlas/</guid>
+      <description>Charlas Verano 2021 </description>
+    </item>
+    
+    <item>
+      <title>Contacto</title>
+      <link>https://pwnedtech.org/contacto/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pwnedtech.org/contacto/</guid>
+      <description>Información Para más información del evento puedes escribirnos en:
+ Twitter: @pwnedtech Instagram: @pwnedtech Correo: contacto@pwnedtech.org  </description>
+    </item>
+    
   </channel>
 </rss>
